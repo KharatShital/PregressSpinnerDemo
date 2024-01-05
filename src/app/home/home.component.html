@@ -1,0 +1,7 @@
+<p>Home Works!<p>
+
+<button (click)="performAction()" [disabled]="showSpinner">
+    <span *ngIf="!showSpinner">Click Me</span>
+    <mat-spinner diameter="30" color="accent" *ngIf="showSpinner"></mat-spinner>
+  </button>
+  
